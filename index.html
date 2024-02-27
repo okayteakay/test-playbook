@@ -1,36 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>DataKind Playbook</title>
-</head>
-<body>
-    <h1>DataKind Playbook</h1>
-    <p>Welcome to the DataKind Playbook. This is the main page.</p>
-    <ul>
-        <li><a href="page1.html">Page 1</a></li>
-        <li><a href="page2.html">Page 2</a></li>
-        <li><a href="page3.html">Page 3</a></li>
-    </ul>
-
-    <script src="https://giscus.app/client.js"
-        data-repo="okayteakay/test-playbook"
-        data-repo-id="R_kgDOLXgDyQ"
-        data-category="General"
-        data-category-id="DIC_kwDOLXgDyc4CdgsA"
-        data-mapping="title"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="noborder_light"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
-</body>
-</html> -->
-
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -130,5 +98,249 @@
         async>
     </script>
 </body>
-</html>
+</html> -->
 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="X3UyS3uwty8oPgAEVILvoBursUsDtBYIXbBMUiDA">
+
+        <title>DataKind</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/images/icons/favicon.ico">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="/css/app.css">
+
+        <!-- Scripts -->
+        <script src="/js/app.js" defer></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MR1TH12QEV"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-MR1TH12QEV');
+        </script>
+    </head>
+    <body>
+        <div class="bg-dk-blue-dark">
+                        <div class="relative bg-white">
+    <div class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
+        <div class="flex justify-start lg:w-0 lg:flex-1">
+            <a href="/">
+                <span class="sr-only">DataKind</span>
+                <img class="h-8 w-auto sm:h-10" src="/images/logos/DK_playbook_org.svg" alt="">
+            </a>
+        </div>
+        <div class="-mr-2 -my-2 md:hidden">
+        </div>
+        <nav class="hidden md:flex space-x-10">
+        </nav>
+        <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+            <a href="https://playbook.datakind.org/register" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-dk-orange hover:text-dk-orange hover:bg-white hover:border hover:border-dk-orange">
+                Registration
+            </a>
+            <a href="https://playbook.datakind.org/login" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-dk-orange hover:text-dk-orange hover:bg-white hover:border hover:border-dk-orange">
+                Sign in
+            </a>
+        </div>
+    </div>
+
+    <!--
+      Mobile menu, show/hide based on mobile menu state.
+    -->
+    <div x-data="{navigationOpen: false}" class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <div
+            x-show="navigationOpen"
+            x-transition:enter="duration-200 ease-out"
+            x-transition:enter-start="opacity-0 scale-95"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="duration-100 ease-in"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-95"
+            class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50"
+        >
+            <div class="pt-5 pb-6 px-5">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <img class="h-8 w-auto" src="/images/logos/DK_LOGO_R_ORG.svg" alt="DataKind">
+                    </div>
+                    <div class="-mr-2">
+                        <button type="button" type="button" @click="navigationOpen = !navigationOpen" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                            <span class="sr-only">Close menu</span>
+                            <!-- Heroicon name: outline/x -->
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-6">
+                </div>
+            </div>
+            <div class="py-6 px-5">
+                <div class="grid grid-cols-2 gap-4">
+                </div>
+                <div class="mt-6">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="text-white pt-8 pb-8 md:pt-28 md:pb-32 max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-8 gap-8">
+            <div class="col-span-4 md:col-span-2 pl-6 ml-16">
+                <img class="object-cover w-full" src="/images/color.png"/>
+            </div>
+            <div class="col-span-5">
+                <div class="text-4xl sm:text-5xl font-extralight pb-4 ml-8 mr-8 md:ml-4 md:mr-4">Welcome to the<br /><span class="border-b">DataKind Playbook</span></div>
+                <div class="text-white mt-8 mb-8 ml-8 mr-8 md:ml-4 md:mr-4">
+                    <div class="font-extralight text-lg">
+                        <p class="leading-snug">
+                            The DataKind Playbook is our global, user-centered knowledge base for implementing a data-for-good project. Following our standards and best practices, learn how we work at DataKind and share your ideas for how we can iterate!</p>
+                    </div>
+                </div>
+                <div class="text-left ml-6 mr-6 md:ml-4 md:mr-4">
+                    <a href="https://playbook.datakind.org/register" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 ml-4 border border-transparent rounded-md shadow-sm text-base font-medium text-dk-blue-dark bg-white hover:text-white hover:bg-dk-blue-dark hover:border hover:border-white">
+                        Register
+                    </a>
+                    <a href="https://playbook.datakind.org/login" class="ml-4 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-dk-blue-dark bg-white hover:text-white hover:bg-dk-blue-dark hover:border hover:border-white">
+                        Sign in
+                    </a>
+                </div>
+            </div>
+            <div class="col-span-1"></div>
+        </div>
+    </div>
+        </div>
+        <!-- This example requires Tailwind CSS v2.0+ -->
+<footer class="bg-dk-aqua-dark" aria-labelledby="footerHeading">
+    <h2 id="footerHeading" class="sr-only">Footer</h2>
+    <div class="max-w-md mx-auto pt-12 pb-12 px-4 sm:max-w-7xl sm:px-6 lg:pt-16 lg:px-8">
+        <div class="md:grid md:grid-cols-3 lg:grid-cols-4 xl:gap-8">
+            <div class="space-y-6 xl:col-span-1">
+                <a href="https://www.datakind.org" target="_blank"><img class="h-10" src="/images/logos/DK_LOGO_R_WHT.svg" alt="DataKind Homepage"></a>
+                <p class="text-white text-lg font-semibold leading-5">
+                    Harnessing the power of data science + AI in the service of humanity.
+                </p>
+            </div>
+            <div class="py-8 md:py-0 md:ml-10 lg:mt-10 grid grid-cols-1 lg:grid-cols-2 md:gap-8 xl:mt-0 xl:col-span-2">
+                <div class="md:grid sm:grid-cols-1 md:gap-8">
+                    <div>
+                        <ul class="list-none">
+                            <li class="py-0">
+                                <a href="https://www.datakind.org/careers" class="text-md md:text-xl text-white border-b border-transparent hover:border-white focus:outline-none focus:ring-2 focus:ring-white hover:no-underline">
+                                    Careers
+                                </a>
+                            </li>
+                            <li class="py-0">
+                                <a href="https://www.datakind.org/press" class="text-md md:text-xl text-white border-b border-transparent hover:border-white focus:outline-none focus:ring-2 focus:ring-white hover:no-underline">
+                                    Press + media
+                                </a>
+                            </li>
+                            <li class="py-0">
+                                <a href="https://www.datakind.org/digital-swag" class="text-md md:text-xl text-white border-b border-transparent hover:border-white focus:outline-none focus:ring-2 focus:ring-white hover:no-underline">
+                                    Digital swag
+                                </a>
+                            </li>
+                            <li class="py-0">
+                                <a href="https://www.datakind.org/faq" class="text-md md:text-xl text-white border-b border-transparent hover:border-white focus:outline-none focus:ring-2 focus:ring-white hover:no-underline">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li class="py-0">
+                                <a href="https://www.datakind.org/contact" class="text-md md:text-xl text-white border-b border-transparent hover:border-white focus:outline-none focus:ring-2 focus:ring-white hover:no-underline">
+                                    Contact us
+                                </a>
+                            </li>
+                            <li class="py-0">
+                                <a href="https://www.datakind.org/privacy" class="text-md md:text-xl text-white border-b border-transparent hover:border-white focus:outline-none focus:ring-2 focus:ring-white hover:no-underline">
+                                    Privacy + terms
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1">
+                <div class="flex space-x-4">
+                    <a href="https://twitter.com/datakind" target="_blank" class="text-white hover:text-dk-aqua-light">
+                        <span class="sr-only">Twitter</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                        </svg>
+                    </a>
+
+                    <a href="https://www.facebook.com/DataKindOrg" target="_blank" class="text-white hover:text-dk-aqua-light">
+                        <span class="sr-only">Facebook</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/datakind" target="_blank" class="text-white hover:text-dk-aqua-light">
+                        <span class="sr-only">LinkedIn</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+
+                    <a href="https://github.com/datakind" target="_blank" class="text-white hover:text-dk-aqua-light">
+                        <span class="sr-only">GitHub</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                            <!-- Begin Mailchimp Signup Form -->
+                            <form action="https://datakind.us2.list-manage.com/subscribe/post?u=3c913d9d652047301ea1ddf1c&amp;id=01bb89108a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3c913d9d652047301ea1ddf1c_01bb89108a" tabindex="-1" value=""></div>
+                                <label for="email" class="block text-white text-lg font-semibold my-3">Subscribe to our Newsletter:</label>
+                                <div class="mt-1 flex rounded-md shadow-sm">
+                                    <div class="relative flex items-stretch flex-grow focus-within:z-10">
+                                        <input type="email" value="" name="EMAIL" class="bg-dk-aqua-dark text-white focus:ring-dk-aqua focus:border-dk-aqua block w-full rounded-none rounded-l-md sm:text-sm border-white placeholder-white" id="mce-EMAIL" placeholder="email address" required>
+                                    </div>
+                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="-ml-px relative inline-flex items-center space-x-2 px-4 py-2 bg-dk-aqua-dark border border-white text-sm font-medium rounded-r-md text-white bg-gray-50 hover:bg-dk-aqua-light focus:outline-none focus:ring-1 focus:ring-dk-aqua focus:border-dk-aqua">
+                                        <span>Subscribe</span>
+                                    </button>
+                                </div>
+                            </form>
+                            <!--End mc_embed_signup-->
+                    <p class="mt-8 md:mt-4 text-sm text-white">
+
+                        &copy; 2021 DataKind, Inc. All rights reserved.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+    <script src="https://giscus.app/client.js"
+    data-repo="okayteakay/test-playbook"
+    data-repo-id="R_kgDOLXgDyQ"
+    data-category="General"
+    data-category-id="DIC_kwDOLXgDyc4CdgsA"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="noborder_light"
+    data-lang="en"
+    crossorigin="anonymous"
+    async>
+    </script>
+    </body>
+</html>
