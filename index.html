@@ -132,71 +132,71 @@
         </script>
     </head>
     <body>
-        <div class="bg-dk-blue-dark">
-                        <div class="relative bg-white">
-    <div class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
-        <div class="flex justify-start lg:w-0 lg:flex-1">
-            <a href="/">
-                <span class="sr-only">DataKind</span>
-                <img class="h-8 w-auto sm:h-10" src="images/logos/DK_playbook_org.svg" alt="">
-            </a>
+<div class="bg-dk-blue-dark">
+<div class="relative bg-white">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+                <a href="/">
+                    <span class="sr-only">DataKind</span>
+                    <img class="h-8 w-auto sm:h-10" src="images/logos/DK_playbook_org.svg" alt="">
+                </a>
+            </div>
+            <div class="-mr-2 -my-2 md:hidden">
+            </div>
+            <nav class="hidden md:flex space-x-10">
+            </nav>
+            <!-- <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                <a href="https://playbook.datakind.org/register" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-dk-orange hover:text-dk-orange hover:bg-white hover:border hover:border-dk-orange">
+                    Registration
+                </a>
+                <a href="https://playbook.datakind.org/login" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-dk-orange hover:text-dk-orange hover:bg-white hover:border hover:border-dk-orange">
+                    Sign in
+                </a>
+            </div> -->
         </div>
-        <div class="-mr-2 -my-2 md:hidden">
-        </div>
-        <nav class="hidden md:flex space-x-10">
-        </nav>
-        <!-- <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a href="https://playbook.datakind.org/register" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-dk-orange hover:text-dk-orange hover:bg-white hover:border hover:border-dk-orange">
-                Registration
-            </a>
-            <a href="https://playbook.datakind.org/login" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-dk-orange hover:text-dk-orange hover:bg-white hover:border hover:border-dk-orange">
-                Sign in
-            </a>
-        </div> -->
-    </div>
 
-    <!--
-      Mobile menu, show/hide based on mobile menu state.
-    -->
-    <div x-data="{navigationOpen: false}" class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-        <div
-            x-show="navigationOpen"
-            x-transition:enter="duration-200 ease-out"
-            x-transition:enter-start="opacity-0 scale-95"
-            x-transition:enter-end="opacity-100 scale-100"
-            x-transition:leave="duration-100 ease-in"
-            x-transition:leave-start="opacity-100 scale-100"
-            x-transition:leave-end="opacity-0 scale-95"
-            class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50"
-        >
-            <div class="pt-5 pb-6 px-5">
-                <div class="flex items-center justify-between">
-                    <div>
-                        <img class="h-8 w-auto" src="/images/logos/DK_LOGO_R_ORG.svg" alt="DataKind">
+        <!--
+        Mobile menu, show/hide based on mobile menu state.
+        -->
+        <div x-data="{navigationOpen: false}" class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+            <div
+                x-show="navigationOpen"
+                x-transition:enter="duration-200 ease-out"
+                x-transition:enter-start="opacity-0 scale-95"
+                x-transition:enter-end="opacity-100 scale-100"
+                x-transition:leave="duration-100 ease-in"
+                x-transition:leave-start="opacity-100 scale-100"
+                x-transition:leave-end="opacity-0 scale-95"
+                class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50"
+            >
+                <div class="pt-5 pb-6 px-5">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <img class="h-8 w-auto" src="/images/logos/DK_LOGO_R_ORG.svg" alt="DataKind">
+                        </div>
+                        <div class="-mr-2">
+                            <button type="button" type="button" @click="navigationOpen = !navigationOpen" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                <span class="sr-only">Close menu</span>
+                                <!-- Heroicon name: outline/x -->
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <div class="-mr-2">
-                        <button type="button" type="button" @click="navigationOpen = !navigationOpen" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                            <span class="sr-only">Close menu</span>
-                            <!-- Heroicon name: outline/x -->
-                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
+                    <div class="mt-6">
                     </div>
                 </div>
-                <div class="mt-6">
-                </div>
-            </div>
-            <div class="py-6 px-5">
-                <div class="grid grid-cols-2 gap-4">
-                </div>
-                <div class="mt-6">
+                <div class="py-6 px-5">
+                    <div class="grid grid-cols-2 gap-4">
+                    </div>
+                    <div class="mt-6">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-            <div class="text-white pt-8 pb-8 md:pt-28 md:pb-32 max-w-7xl mx-auto sm:px-6 lg:px-8">
+    <div class="text-white pt-8 pb-8 md:pt-28 md:pb-32 max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-8 gap-8">
             <div class="col-span-4 md:col-span-2 pl-6 ml-16">
                 <img class="object-cover w-full" src="/images/color.png"/>
@@ -210,7 +210,7 @@
                     </div>
                 </div>
                 <br>
-                <div class="font-extralight text-xl mt-8 mb-6 ml-8 mr-8 md:ml-4 md:mr-4"> <span class="border-b"><strong>Getting started with the Playbook</strong></span></div> 
+                <div class="font-extralight text-xl mt-8 mb-6 ml-8 mr-8 md:ml-4 md:mr-4"> <span class="border-b" href="intro.html"><strong>Getting started with the Playbook</strong></span></div> 
                 <!-- <div class="text-left ml-6 mr-6 md:ml-4 md:mr-4">
                     <a href="https://playbook.datakind.org/register" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 ml-4 border border-transparent rounded-md shadow-sm text-base font-medium text-dk-blue-dark bg-white hover:text-white hover:bg-dk-blue-dark hover:border hover:border-white">
                         Register
@@ -223,7 +223,7 @@
             <div class="col-span-1"></div>
         </div>
     </div>
-        </div>
+</div>
         <!-- This example requires Tailwind CSS v2.0+ -->
 <footer class="bg-dk-aqua-dark" aria-labelledby="footerHeading">
     <h2 id="footerHeading" class="sr-only">Footer</h2>
